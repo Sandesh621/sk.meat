@@ -78,6 +78,11 @@
             margin-top: 10px;
             border: 2px solid #2c3e50;
             border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        
+        .qr-code-img:hover {
+            transform: scale(1.05);
         }
 
         .phone-numbers {
@@ -173,8 +178,10 @@
         <!-- QR Code Section -->
         <div class="card">
             <h2>Price List</h2>
-            <p class="contact-info">Scan the QR code below to view our full price table.</p>
-            <img src="qr.png" alt="Scan to view price table" class="qr-code-img">
+            <p class="contact-info">Scan the QR code below or <strong>click/tap on it</strong> to view our full price table.</p>
+            <a href="https://drive.google.com/drive/folders/1gCsiqvlk4dsJDqKZVmEpTtxaQ9YLICdo?usp=sharing" target="_blank" rel="noopener noreferrer">
+                <img src="qr.png" alt="Scan or click to view price table" class="qr-code-img">
+            </a>
         </div>
 
         <!-- Location Section -->
