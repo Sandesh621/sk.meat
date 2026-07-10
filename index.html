@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S. K. Meat Shop | Premium Pork in Balkot</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f6efe8;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            background-image: url('header.png');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 3rem 1rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            border-bottom: 8px solid #2c3e50;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        header img {
+            max-width: 600px;
+            width: 100%;
+            height: auto;
+            margin: 0;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Information Cards */
+        .card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            text-align: center;
+            border: 1px solid #e0d5c1;
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 2rem;
+            text-transform: uppercase;
+            border-bottom: 3px solid #8b2b2b;
+            display: inline-block;
+            padding-bottom: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+
+        /* QR Code Styling */
+        .qr-code-img {
+            max-width: 250px;
+            height: auto;
+            margin-top: 10px;
+            border: 2px solid #2c3e50;
+            border-radius: 8px;
+        }
+
+        .phone-numbers {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .phone {
+            background-color: #25D366;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .phone:hover {
+            background-color: #128C7E;
+            transform: translateY(-2px);
+        }
+
+        .whatsapp-icon {
+            height: 25px;
+            width: auto;
+        }
+
+        .map-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            border: 4px solid #2c3e50;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #2c3e50;
+            color: #e5d8c8;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 600px) {
+            header img { max-width: 90%; }
+            .phone { width: 100%; box-sizing: border-box; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="S. K. Meat Shop Logo">
+    </header>
+
+    <div class="container">
+        
+        <!-- Order Section -->
+        <div class="card">
+            <h2>Place Your Order</h2>
+            <p class="contact-info">Fresh, premium cuts ready for you. Contact us via WhatsApp to place your order!</p>
+            <div class="phone-numbers">
+                <a href="https://wa.me/9779812210165" class="phone">
+                    <img src="Whatsapp.png" class="whatsapp-icon" alt="WhatsApp"> 9812210165
+                </a>
+                <a href="https://wa.me/9779816608646" class="phone">
+                    <img src="Whatsapp.png" class="whatsapp-icon" alt="WhatsApp"> 9816608646
+                </a>
+                <a href="https://wa.me/9779768008049" class="phone">
+                    <img src="Whatsapp.png" class="whatsapp-icon" alt="WhatsApp"> 9768008049
+                </a>
+            </div>
+        </div>
+
+        <!-- QR Code Section -->
+        <div class="card">
+            <h2>Price List</h2>
+            <p class="contact-info">Scan the QR code below to view our full price table.</p>
+            <img src="qr.png" alt="Scan to view price table" class="qr-code-img">
+        </div>
+
+        <!-- Location Section -->
+        <div class="card">
+            <h2>Visit Our Shop</h2>
+            <p class="contact-info"><strong>📍 Balkot, Bhaktapur</strong></p>
+            
+            <div class="map-container">
+                <iframe 
+                    src="https://maps.google.com/maps?q=27.670131,85.376783&t=m&z=17&ie=UTF8&iwloc=&output=embed" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 S. K. Meat Shop. All Rights Reserved. | Balkot, Bhaktapur</p>
+    </footer>
+
+</body>
+</html>
